@@ -1,0 +1,4 @@
+{% comment %}Authors, venue and links of one publication. Usage: include publication-info.html pub=post{% endcomment %}
+{% assign pub = include.pub %}
+{% if pub.authors %}<p>{{ pub.authors }}</p>{% endif %}
+<p>{% if pub.category == 'preprints' %}Preprint, {% endif %}<i>{{ pub.venue }}</i> ({{ pub.date | date: "%Y" }}){% if pub.doiurl or pub.arxivurl %}<br />{% if pub.doiurl %}<a href="{{ pub.doiurl }}">DOI</a>{% endif %}{% if pub.doiurl and pub.arxivurl %} | {% endif %}{% if pub.arxivurl %}<a href="{{ pub.arxivurl }}">arXiv</a>{% endif %}{% endif %}</p>

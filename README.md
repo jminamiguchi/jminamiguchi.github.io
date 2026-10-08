@@ -13,7 +13,7 @@
 | 講演 | `_talks/` に1件1ファイル |
 | 上部のメニュー | `_data/navigation.yml` |
 
-論文を足すときは，`_publications/` の既存ファイルを複製して書き換える．`category` は査読付きなら `refereed`，プレプリントなら `preprints`．プレプリントが出版されたら `category` を `refereed` に，`venue` と `paperurl` を雑誌のものに変える．
+論文を足すときは，`_publications/` の既存ファイルを複製して書き換える．`category` は査読付きなら `refereed`，プレプリントなら `preprints`．プレプリントが出版されたら `category` を `refereed` に，`venue` を雑誌名・巻・論文番号に変え，`doiurl` に DOI の URL を足す．
 
 講演を足すときは，`_talks/` の既存ファイルを複製して書き換える．日付が月までしか分からないときは，`date` に月の1日を入れ，`date_label` に表示する文字列（例: `"February 2026"`）を書く．
 
