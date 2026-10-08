@@ -1,0 +1,11 @@
+# The order of the links in the header of the website.
+
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Talks"
+    url: /talks/
+
+  - title: "CV"
+    url: /cv/
