@@ -149,6 +149,8 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://inspirehep.net/authors/3081303"
+    - "https://github.com/jminamiguchi"
 
 
 # Analytics
