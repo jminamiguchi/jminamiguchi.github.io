@@ -29,7 +29,7 @@ redirect_from:
 * October 2025–present: Research Assistant, International Graduate Program of Innovation for Intelligent World (WINGS-IIW), The University of Tokyo.
 * August–September 2023: Research internship, The University of British Columbia, Canada (UTokyo Study and Visit Abroad Program).
 
-## Publications
+## Papers
 
 <ul>{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
