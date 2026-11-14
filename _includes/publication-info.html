@@ -3,4 +3,4 @@
 {% if pub.authors %}<p>{{ pub.authors }}</p>{% endif %}
 {% capture year %}{{ pub.date | date: "%Y" }}{% endcapture %}
 {% capture venue_year %}{{ pub.venue }} ({{ year }}){% endcapture %}
-<p>{% if pub.category == 'preprints' %}Preprint, {% endif %}<i>{% if pub.doiurl %}<a href="{{ pub.doiurl }}">{{ venue_year }}</a>{% elsif pub.arxivurl %}<a href="{{ pub.arxivurl }}">{{ venue_year }}</a>{% else %}{{ venue_year }}{% endif %}</i>{% if pub.doiurl and pub.arxivurl %}; <a href="{{ pub.arxivurl }}">arXiv:{{ pub.arxivurl | split: '/abs/' | last }}</a>{% endif %}</p>
+<p><i>{% if pub.doiurl %}<a href="{{ pub.doiurl }}">{{ venue_year }}</a>{% elsif pub.arxivurl %}<a href="{{ pub.arxivurl }}">{{ venue_year }}</a>{% else %}{{ venue_year }}{% endif %}</i>{% if pub.doiurl and pub.arxivurl %}; <a href="{{ pub.arxivurl }}">arXiv:{{ pub.arxivurl | split: '/abs/' | last }}</a>{% endif %}</p>
